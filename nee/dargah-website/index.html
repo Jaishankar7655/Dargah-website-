@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raisen Dargah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: fixed;
+            right: 0;
+            bottom: 0px;
+            z-index: 1;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 10px 100px;
+        }
+        .box1 img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+
+    <div class="box1">
+       <a href="https://www.phonepe.com"> <img src="upi1.png" alt=""></a>
+        <h4>Scan and Donate here</h4>
+
+    </div>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-clipart/20230429/original/pngtree-mosque-dome-building-islamic-icon-png-image_9123061.png" alt="Raisen Dargah Logo">
+                Raisen Dargah
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>    <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+ <div class="slider">
+        <div class="slide current">
+            <img src="https://images.unsplash.com/photo-1537181534458-45dcee76ae90?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="slide-text">
+                <h1>Welcome to Raisen Dargah</h1>
+                <p>A place of spiritual enlightenment</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://plus.unsplash.com/premium_photo-1679760773927-238b275cca96?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Raisen Dargah 2">
+            <div class="slide-text">
+                <h1>Rich Islamic Heritage</h1>
+                <p>Experience centuries of history</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="slide-text">
+                <h1>Community and Faith</h1>
+                <p>Join our vibrant spiritual community</p>
+            </div>
+        </div>
+        <button class="slider-btn prev">&lt;</button>
+        <button class="slider-btn next">&gt;</button>
+    </div> 
+
+    <main>
+        <section id="about">
+            <h2>About Raisen Dargah</h2>
+            <div class="about-content">
+                <img src="https://www.nativeplanet.com/img/2014/07/11-raisenfort1.jpg" alt="Historical Image of Raisen Dargah">
+                <div class="about-text">
+                    <p>Raisen Dargah, located in the heart of Raisen, Madhya Pradesh, has been a beacon of spiritual enlightenment for centuries. Founded in the 16th century, this sacred shrine is dedicated to the revered Sufi saint...</p>
+                    <p>Our dargah stands as a testament to the rich Islamic heritage of the region, featuring stunning Indo-Islamic architecture that blends Mughal and local styles...</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                
+                
+                
+                <div class="service-item">
+                    <i class="fas fa-pray"></i>
+                    <h3>Daily Prayers</h3>
+                    <p>Join us for five daily prayers in our serene prayer hall.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Religious Education</h3>
+                    <p>Attend our classes on Islamic studies and Quranic recitation.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Community Events</h3>
+                    <p>Participate in our regular community gatherings and charitable activities.</p>
+                </div>
+                
+                
+            </div>
+        </section>
+
+         <section id="donations">
+            <h2>Support Our Cause</h2>
+            <div class="donation-container">
+                <form id="donation-form">
+                    <select id="donation-cause">
+                        <option value="food">Food for the Needy</option>
+                        <option value="clocks">Clocks for the Dargah</option>
+                        <option value="candles">Candles for Ceremonies</option>
+                        <option value="blankets">Blankets for the Poor</option>
+                        <option value="maintenance">General Maintenance</option>
+                    </select>
+                    <input type="number" id="donation-amount" placeholder="Amount">
+                    <button type="button" onclick="makeDonation()">Donate Now</button>
+                </form>
+                <button id="upi-btn">Pay with UPI</button>
+            </div>
+        </section>
+        <div id="upi-popup" class="popup">
+            <div class="popup-content">
+                <img src="upi1.png" alt="UPI QR Code">
+                <h3>Scan and Donate. </h3>
+                <h4>UPI - 9131705898@ybl.</h4>
+                <p>After Payment please Share your screenshot with us. </p>
+                <p>whats app :+91 9131705898</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://c8.alamy.com/comp/2HN4KTC/entrance-gate-view-from-inside-of-hazrat-peer-fatehullah-shah-baba-dargah-at-raisen-is-the-most-important-place-of-the-raisen-region-madhya-pradesh-2HN4KTC.jpg" alt="Raisen Dargah Architecture">
+                <img src="https://images.saatchiart.com/saatchi/2178309/art/10229567/9292305-IOXZWPLP-7.jpg" alt="Islamic Calligraphy">
+                <img src="https://i.ytimg.com/vi/ZvCQ7jTzHOY/sddefault.jpg" alt="Community Gathering">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1zo6F3CqmsNcaAvXulika66Xf3LdkeZ-NQ&s" alt="Prayer Hall">
+                <img src="https://static.wixstatic.com/media/0cee5b_44a29e74a38c4f84b4496dfffd375082~mv2.jpeg/v1/fill/w_640,h_640,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/0cee5b_44a29e74a38c4f84b4496dfffd375082~mv2.jpeg" alt="Dargah at Night">
+                <img src="https://i.pinimg.com/564x/a2/02/49/a2024938fe63e1750654272897aec5fb.jpg" alt="Islamic Art Detail"><img src="https://images.saatchiart.com/saatchi/2178309/art/10229567/9292305-IOXZWPLP-7.jpg" alt="Islamic Calligraphy">
+                <img src="https://images.saatchiart.com/saatchi/2178309/art/10229567/9292305-IOXZWPLP-7.jpg" alt="Islamic Calligraphy">
+                <img src="https://i.ytimg.com/vi/ZvCQ7jTzHOY/sddefault.jpg" alt="Community Gathering">
+                <img src="https://i.ytimg.com/vi/ZvCQ7jTzHOY/sddefault.jpg" alt="Community Gathering">
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Dargah Road, Raisen, Madhya Pradesh, India</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p>+91 1234567890</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>info@raisendargah.com</p>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.5!2d77.7!3d23.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE4JzAwLjAiTiA3N8KwNDInMDAuMCJF!5e0!3m2!1sen!2sus!4v1615!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#donations">Donations</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <h3>Connect With Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Raisen Dargah. All rights reserved.</p>
+        </div>
+    </footer>
+    <sc ript src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
